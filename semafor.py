@@ -1,8 +1,8 @@
-import umachine
-import utime
+from machine import Pin
+from time import sleep
  
- led = umachine.pin(25, umachine.Pin.OUT)
+pin = Pin(25, Pin.OUT)
 
 while True:
-    led.togle()
-    utime.sleep(1)
+    pin.toggle()
+    sleep(1)
